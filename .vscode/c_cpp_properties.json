@@ -1,0 +1,48 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${default}",
+                "${workspaceFolder}/",
+                "${workspaceFolder}/config",
+                "${workspaceFolder}/examples",
+                "${workspaceFolder}/hal/include",
+                "${workspaceFolder}/hal/utils/include",
+                
+                "${workspaceFolder}/hpl/core",
+                "${workspaceFolder}/hpl/dmac",
+                "${workspaceFolder}/hpl/gclk",
+                "${workspaceFolder}/hpl/mclk",
+                "${workspaceFolder}/hpl/osc32kctrl",
+                "${workspaceFolder}/hpl/oscctrl",
+                "${workspaceFolder}/hpl/pm",
+                "${workspaceFolder}/hpl/port",
+
+                "${workspaceFolder}/hri",
+
+                "${workspaceFolder}/SAML21_DFP/1.2.125/saml21b/include",
+                "${workspaceFolder}/SAML21_DFP/1.2.125/saml21b/include/component",
+                "${workspaceFolder}/SAML21_DFP/1.2.125/saml21b/include/instance",
+                "${workspaceFolder}/SAML21_DFP/1.2.125/saml21b/include/pio",
+                "${workspaceFolder}/CMSIS/Core/Include",
+                "${workspaceFolder}"
+            ],
+            "defines": [
+                "DEBUG",
+                "__SAML21J18B__"
+            ],
+            "compilerPath": "C:/ProgramData/chocolatey/bin/arm-none-eabi-gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "windows-gcc-arm",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ]
+            },
+            "configurationProvider": "ms-vscode.makefile-tools"
+        }
+    ],
+    "version": 4
+}

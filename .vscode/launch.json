@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "openocd",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build",
+            
+            "gdbPath": "C:/ProgramData/chocolatey/bin/arm-none-eabi-gdb.exe",
+            "executable": "${workspaceFolder}/Debug/ATSAML21J18B-VSC-TEMPLATE.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "showDevDebugOutput": "raw",
+            "serverpath": "C:/ProgramData/chocolatey/bin/openocd.exe",
+            "svdFile": "${workspaceFolder}/SAML21_DFP/ATSAML21J18B.svd",
+            "configFiles": [
+                "${workspaceFolder}/openocd.cfg"
+            ]
+        }
+    ]
+}
